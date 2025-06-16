@@ -1,0 +1,28 @@
+<svg width="400" height="1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- This is a comment 
+    <marker id="" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4caf50"/>
+    </marker>-->
+    <style>
+      .flow {
+        stroke: #0e0bbf;
+        stroke-width: 4;
+        marker-end: url(#arrow);
+        stroke-dasharray: 10;
+        animation: dashmove 1.5s linear infinite;
+      }
+      @keyframes dashmove {
+        0% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: -20; }
+      }
+    </style>
+  </defs>
+
+  <line x1="50" y1="100" x2="350" y2="100" class="flow"/>
+  <line x1="50" y1="150" x2="350" y2="150" class="flow"/>
+  <line x1="350" y1="100" x2="350" y2="20" class="flow"/>
+  <line x1="350" y1="150" x2="350" y2="230" class="flow"/>
+  <line x1="375" y1="20" x2="375" y2="230" class="flow"/>
+
+</svg>
